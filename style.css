@@ -8,12 +8,15 @@ body {
     display:flex;
     width: auto;
     height:52x;
-    background-color: #1F2937;
+    background-color: #1f293700;
     margin: -8px;
+    margin-bottom:-100px;
     padding-top: 8px;
     justify-content: center;
     color:white;
     flex-wrap: nowrap;
+    fill-opacity: 50%;
+    overflow:overlay;
 }
 
 .header-left {
@@ -21,7 +24,7 @@ body {
     flex-direction: row;
     margin-right: auto;
     padding-left: 8%;
-    gap:10px;
+    gap:32px;
     justify-content: center;
     align-items: center;
     flex-wrap:nowrap;
@@ -54,12 +57,23 @@ body {
     background-color: #1F2937;
     margin:-8px;
     margin-top:0px;
-    padding-top:75px;
+    padding-top:175px;
     padding-bottom: 75px;
     align-content: center;
     color:#e5e7eb;
-    gap:32px;
-    height: 270px;
+    gap:64px;
+    height: 350px;
+    background-image: url(tech-city.jpg);
+    background-position-y:-80px;
+    background-position-x: 250px;
+    background-size: cover;
+    background-repeat:repeat;
+    background-attachment: fixed;
+    background-clip:border-box;
+}
+
+#tech-city.jpg {
+
 }
 
 .left {
@@ -97,6 +111,12 @@ body {
     justify-content: center;
     align-items: center;
     margin-left: auto;
+    opacity:0%;
+}
+
+.hero-pic {
+    height: 300px;
+    width:auto;
 }
 
 .second {
@@ -126,19 +146,27 @@ body {
 }
 
 .box {
-    width:150px;
-    height:150px;
+    display: flex;
+    width:180px;
+    height:180px;
     border:3px solid;
-    border-color: #006aff;
-    border-radius: 25px;
+    border-color: #1c8ada;
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+}
 
+.box-image {
+    width:125px;
+    height:125px;
+    align-content: center;
 }
 
 .third {
     background-color: #e5e7eb;
     margin: -8px;
-    padding-left: 18%;
-    padding-right: 18%;
+    padding-left: 15%;
+    padding-right: 15%;
     padding-top: 0px;
     padding-bottom: 0px;
     font-size: 28px;
@@ -173,17 +201,17 @@ body {
 .fourth {
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     padding:50px;
     height: 225px;
 }
 
 .container-two {
-    background-color:#3882F6;
+    background-color:#1c8ada;
     width:75%;
     display:flex;
     justify-content: space-evenly;
-    margin:50px;
+    margin:25px;
     height: 125px;
     border:2px solid;
     border-color: #ffffff;
@@ -239,10 +267,10 @@ p {
     font-size:16px;
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 150px;
+    width: 180px;
     color: rgb(92, 92, 92);
     line-height: 18px;
-    margin-top: 8px;
+    margin-top: 16px;
 }
 
 a {
@@ -251,9 +279,8 @@ a {
     padding: 8px;
     padding-right: 0px;
     padding-left:0px;
-    font-size: 18px;
-    font-family: Arial, sans-serif;
-    opacity: 75%;
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
 }
 
 button {
@@ -265,7 +292,7 @@ button {
     border-color: white;
     color: white;
     border:2px solid;
-    background-color: #3882F6;
+    background-color: #1c8ada;
     border-radius: 5px;
     align-self: center;
     font-weight: bold;
@@ -273,7 +300,7 @@ button {
 }
 
 .button-1 {
-    border-color:#3882F6;
+    border-color:#1c8ada;
     margin-right: auto;
 }
 
