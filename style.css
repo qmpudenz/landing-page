@@ -6,12 +6,12 @@ body {
 
 .header {
     display:flex;
-    width: auto;
-    height:52x;
+    width: 100vw;
+    height:12vh;
     background-color: #1f293700;
-    margin: -8px;
-    margin-bottom:-100px;
-    padding-top: 8px;
+    margin: -32px;
+    margin-bottom:-12vh;
+    padding-top: 24px;
     justify-content: center;
     color:white;
     flex-wrap: nowrap;
@@ -24,15 +24,17 @@ body {
     flex-direction: row;
     margin-right: auto;
     padding-left: 8%;
-    gap:32px;
+    gap:1.25vw;
     justify-content: center;
     align-items: center;
     flex-wrap:nowrap;
+    width:35vw;
+    vmin: 10.416666666667 vw;
 }
 
 .logo {
-    width:45px;
-    height:45px;
+    width:5vw;
+    height:5vw;
     align-self: center;
 }
 
@@ -44,8 +46,10 @@ body {
     flex:1 1;
     padding-right: 8%;
     align-items: center;
-    gap: 24px;
+    gap: 1.25vw;
     color:#e5e7eb;
+    width:65vw;
+    min-width: 10.416666666667 vw;
 }
 
 .first {
@@ -62,18 +66,15 @@ body {
     align-content: center;
     color:#e5e7eb;
     gap:64px;
-    height: 350px;
+    height: 32.407vh;
     background-image: url(tech-city.jpg);
-    background-position-y:-80px;
+    background-position-y:-150px;
     background-position-x: 250px;
     background-size: cover;
     background-repeat:repeat;
     background-attachment: fixed;
     background-clip:border-box;
-}
-
-#tech-city.jpg {
-
+    vmin:;
 }
 
 .left {
@@ -147,9 +148,9 @@ body {
 
 .box {
     display: flex;
-    width:180px;
-    height:180px;
-    border:3px solid;
+    width:9.375vw;
+    height:9.375vw;
+    border:0.156vw solid;
     border-color: #1c8ada;
     border-radius: 100px;
     justify-content: center;
@@ -157,8 +158,8 @@ body {
 }
 
 .box-image {
-    width:125px;
-    height:125px;
+    width:6.51vw;
+    height:6.51vw;
     align-content: center;
 }
 
@@ -239,7 +240,7 @@ body {
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 3.750vw;
     color:#f9faf8;
     margin-bottom: -8px;
     margin-top: -8px;
@@ -247,14 +248,14 @@ h1 {
 }
 
 h2 {
-    font-size: 32px;
+    font-size: 2.500vw;
     align-content: center;
     margin-bottom: 40px;
     color:#1F2937;
 }
 
 h3 {
-    font-size:24px;
+    font-size:1.875vw;
     color: #f9faf8;
 }
 
@@ -279,7 +280,7 @@ a {
     padding: 8px;
     padding-right: 0px;
     padding-left:0px;
-    font-size: 16px;
+    font-size: 1.250vw;
     font-family: Helvetica, sans-serif;
 }
 
