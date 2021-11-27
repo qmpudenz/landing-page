@@ -8,16 +8,23 @@ body {
 .header {
     display:flex;
     width: 100vw;
-    height:12vh;
+    height:auto;
     background-color: #1f293700;
     margin: 0;
     margin-top:-30px;
-    padding-top: 30px;
+    padding-top: 40px;
     justify-content: space-around;
     color:white;
     flex-wrap: wrap;
     fill-opacity: 50%;
     overflow:overlay;
+}
+
+@media only screen and (max-width:450px){
+    .header {
+        margin-top:3vh;
+        padding-top:0px;
+    }
 }
 
 .header-left {
@@ -42,6 +49,13 @@ body {
     width:5vw;
     height:5vw;
     align-self: center;
+}
+
+@media only screen and (max-width:450px){
+    .logo {
+        width:10vw;
+        height:auto;
+    }
 }
 
 .header-links {
@@ -70,7 +84,7 @@ body {
     justify-content: space-between;
     background-color: #1F2937;
     margin:0px;
-    padding-top:175px;
+    padding-top:25vh;
     padding-bottom: 75px;
     padding-right:10vw;
     padding-left:10vw;
@@ -87,6 +101,17 @@ body {
     width:fill;
 }
 
+@media only screen and (max-width:450px){
+    .first {
+        height:25vh;
+        padding-top:25vh;
+        background-position-y:-10px;
+        margin-top:-15vh
+    }
+}
+
+
+
 .left {
     display: flex;
     flex: 1 1 auto;
@@ -102,12 +127,21 @@ body {
 @media only screen and (max-width:450px){
     .left {
         text-align:center;
+        padding-right:0px;
     }
 }
 
 .left-text {
-    margin-top: 8px;
-    margin-bottom: 8px;
+    font-size:1.5vw;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+}
+
+@media only screen and (max-width:450px){
+    .left-text {
+        font-size:3.75vw;
+        text-align:left;
+    }
 }
 
 
@@ -217,11 +251,17 @@ body {
     display:flex;
     margin-left: auto;
     margin-right: 24px;
-    font-size: 24px;
+    font-size: 2.5vw;
     font-weight: 900;
     margin-top: 0px;
     color:#1F2937;
     font-family: sans-serif;
+}
+
+@media only screen and (max-width:450px){
+    .author {
+        font-size:5vw;
+    }
 }
 
 .fourth {
@@ -251,6 +291,9 @@ body {
         flex-direction:column;
         justify-content:center;
         text-align:center;
+        width:90vw;
+        height:200px;
+        gap:3vh;
     }
 }
 
@@ -276,9 +319,22 @@ body {
    font-size: 2vmax;
 }
 
+@media only screen and (max-width:450px){
+    .call-heading{
+        font-size:5vw;
+                padding-bottom:.5vh;
+    }
+}
+
 .call-description {
     margin-top:0px;
     font-size:1.5vmax;
+}
+
+@media only screen and (max-width:450px){
+    .call-description {
+        font-size:3.5vw;
+    }
 }
 
 h1 {
@@ -289,6 +345,12 @@ h1 {
     font-weight: 900;
 }
 
+@media only screen and (max-width:450px){
+    h1 {
+        font-size: 5vw;
+    }
+}
+
 h2 {
     font-size: 2.5vmax;
     align-content: center;
@@ -296,9 +358,22 @@ h2 {
     color:#1F2937;
 }
 
+@media only screen and (max-width:450px){
+    h2 {
+        font-size:5.25vw;
+        padding-left:2vw
+    }
+
 h3 {
     font-size:1.875vmax;
     color: #f9faf8;
+}
+
+@media only screen and (max-width:450px){
+    h3 {
+        font-size:4.5vw;
+        padding-left:2vw
+    }
 }
 
 p {
@@ -344,8 +419,8 @@ button {
 }
 
 @media only screen and (max-width:450px){
-    .button {
-        font-size:0vw;
+    button {
+        font-size:4vw;
     }
 }
 
@@ -357,6 +432,7 @@ button {
 @media only screen and (max-width:450px){
     .button-1 {
         margin-right:0;
+        font-size:4vw;
     }
 }
 
@@ -368,5 +444,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width:100vw
+    width:100vw;
+    font-size:1.5vmax;
+    align-content:center;
 }
