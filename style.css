@@ -5,6 +5,16 @@ body {
     margin: 0;
 }
 
+.header-and-first {
+    background-image: url(tech-city.jpg);
+    background-position-y: -61px;
+    background-position-x: 200px;
+    background-size: cover;
+    background-repeat:repeat;
+    background-attachment: fixed;
+    background-clip:border-box;
+}
+
 .header {
     display:flex;
     width: 100vw;
@@ -16,8 +26,7 @@ body {
     justify-content: space-around;
     color:white;
     flex-wrap: wrap;
-    fill-opacity: 50%;
-    overflow:overlay;
+    fill-opacity: 0%;
 }
 
 @media only screen and (max-width:450px){
@@ -82,7 +91,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #1F2937;
     margin:0px;
     padding-top:25vh;
     padding-bottom: 75px;
@@ -90,13 +98,6 @@ body {
     padding-left:10vw;
     align-content: center;
     color:#e5e7eb;
-    background-image: url(tech-city.jpg);
-    background-position-y:-100px;
-    background-position-x: 250px;
-    background-size: cover;
-    background-repeat:repeat;
-    background-attachment: fixed;
-    background-clip:border-box;
     margin-top:-12vh;
     width:fill;
 }
@@ -386,7 +387,7 @@ h3 {
 @media only screen and (max-width:450px){
     h3 {
         font-size:4.5vw;
-        padding-left:2vw
+        padding-left:2vw;
     }
 }
 
@@ -396,13 +397,21 @@ p {
 }
 
 .subtext {
-    font-size:16px;
+    font-size:2vw;
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 180px;
+    width: 20vw;
     color: rgb(92, 92, 92);
     line-height: 18px;
     margin-top: 16px;
+}
+
+@media only screen and (max-width:450px){
+    .subtext {
+        width:35vw;
+        padding: 4vw;
+        font-size:4vw;
+    }
 }
 
 a {
